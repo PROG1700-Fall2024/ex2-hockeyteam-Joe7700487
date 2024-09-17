@@ -11,15 +11,14 @@
 # simple math operations
 
 def main():
-    # YOUR CODE STARTS HERE, each line must be indented (one tab)
+    #define variables
+    team = input("Name a team: ")
+    wins = int(input("How many wins do they have?  "))
+    losses = int(input("How many losses do they have? "))
 
+    #calculate win percent and convert to string to append % sign
+    ratio = str('%.2f' % ((wins / losses) * 100)) + "%!"
 
-
-
-
-
-
-
-    # YOUR CODE ENDS HERE
-
+    #print final answer
+    print(team, "has", wins, "wins and", losses, "losses with a win ratio of", ratio)
 main()
